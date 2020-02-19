@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as serverConfiguration from '../../../assets/serverConfiguration.json';
+//import * as serverConfiguration from '../../../assets/serverConfiguration.json';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
@@ -9,9 +9,9 @@ import { environment } from '../../../environments/environment';
 })
 export class HttpService {
 
-  constructor(private httpClient: HttpClient) { }
+   constructor(private httpClient: HttpClient) { }
 
-  public getConfigurations(): any {
+  /*public getConfigurations(): any {
     return serverConfiguration['default'][environment.key].ip;
   }
 
@@ -26,6 +26,6 @@ export class HttpService {
 
   public postRequest(endpoint, payload): Observable<any> {
     return this.httpClient.post(this.formTheUrl(endpoint), payload);
-  }
+  }**/
 
 }
